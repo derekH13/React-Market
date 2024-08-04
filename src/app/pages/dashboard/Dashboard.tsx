@@ -1,20 +1,25 @@
-import { Link } from 'react-router-dom'
+import Header from '../../shared/components/Header/Header'
+import Util from '../../../Api/Util'
 
-
-//aqui eu crio um componente
-const Button = () => {
-    return <button>Meu button</button>
-}
 
 //aqui é uma pagina
 export const Dashboard = () => {
     return(
         <div>
-            <Link to="/entar">Login</Link>
-            <p>pagina Dash</p>  
-            <Button />
+                <Header />
+                
+                
         </div>
         
     )
 
 }
+
+
+Util.requisicao('celular').then((data) => {
+
+    if(!data)return
+
+    console.log(data);
+    
+})

@@ -1,0 +1,32 @@
+
+
+.btn-cart{
+    padding: 0.4rem 1rem;
+    background-color: #f4f2f2;
+    border: none;
+    color: #000000;
+    border-radius: 15px;
+    transition: ease .3s;
+    position: relative;
+}
+
+.btn-cart{
+stroke: #000000;
+stroke-width: .5;
+}
+
+
+.btn-cart:hover{
+    transform: scale(1.05);
+}
+
+.cart-status{
+    background-color: red;
+    margin-top: -.5rem;
+    color: black;
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    font-weight: 600;
+}
