@@ -1,0 +1,27 @@
+.interface{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.descontos-title{
+    margin-top: 2rem;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 4rem;
+    
+}
+
+.descontos-title span{
+    color: rgb(184, 27, 27);
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}

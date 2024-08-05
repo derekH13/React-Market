@@ -1,9 +1,9 @@
-
-
+import React from 'react'
+import { produto } from '../app/shared/Interface/Interface'
 
 export class Util {
   
- static async requisicao(query: string): Promise<any>{
+ static async requisicao(query: string): Promise<produto | undefined>{
         try{
            const Response = await fetch(`https://api.mercadolibre.com/sites/MLB/search?q=${query}`)
 
@@ -11,9 +11,9 @@ export class Util {
             throw new Error('deu erro')
            }
 
-           const result =  Response.json()
+           const data: Promise<produto> =  Response.json()
 
-           return result
+           return data
 
         }catch(error){
 

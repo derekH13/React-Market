@@ -1,0 +1,13 @@
+
+.grid-Desconto1, .grid-Desconto2, .grid-Desconto3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+
+}
+
+.interface{
+    width: 80%;
+    margin: 0 auto;
+}
+
