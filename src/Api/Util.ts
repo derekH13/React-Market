@@ -22,6 +22,15 @@ export class Util {
     }
 
 
+static FormatarMoeda(item: number): string{
+   const result: string =  item.toLocaleString('pt-br', {
+        style: 'currency',
+        currency: 'BRL',
+   })
+
+   return result
+
+}
 
 
 

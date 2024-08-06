@@ -11,3 +11,14 @@
     margin: 0 auto;
 }
 
+
+
+
+@media (max-width:600px) {
+    .grid-Desconto1, .grid-Desconto2, .grid-Desconto3{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+    
+    }
+}

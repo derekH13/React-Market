@@ -3,25 +3,74 @@ h5{
 }
 
 .card{
-    border-radius: 30px;
     background-color: #000000;
     color: aliceblue;
-    box-shadow: 0 3px 32px 0 rgba(99, 100, 117, 0.288);
-    backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 5.5px );
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-top: none;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(49, 49, 49, 0.548);
 }
 
 .card img{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     height: 180px;
-
 }
 
 
 .card-text{
     font-size: 1.1rem;
     font-weight: 500;
+    color: #e7e7e7;
+    line-height: 1.5;
+}
+
+.addcart{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #e01111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    background-color: #000000bb;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+
+}
+
+.card:hover{
+cursor: pointer;
+}
+
+
+.card:hover .addcart{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+
+    h5{
+        font-size: 1.1rem;
+    }
+    
+.card-text{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.card img{
+    height: 150px;
+
+}
+
 }
